@@ -1,0 +1,53 @@
+
+.brand{
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 20px;
+   background-color:#ef9126a2;
+    color: white;
+    padding: 2rem;
+    width: 50%;
+    transition: 0.4s;
+    margin:2rem 0 0 3rem;
+    p{
+        margin-top: 1rem;
+    }
+  
+}
+.brand-content{
+    background:no-repeat  url("../../img/pomelo33.png");
+    background-size: 50%;
+    background-position: 100% 100%;
+    padding-bottom: 17rem;
+}
+
+.brand__text_bold{
+    font-weight: 700;
+}
+.brand__btn{
+    align-self: flex-end;
+    margin:2rem 0 0 0 ;
+    width: 9rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #ed942f;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem ;
+    text-transform: uppercase;
+    border-radius: 60px;
+    text-decoration: none;
+    border: 2px solid #EF9226;
+    transition: background-color 0.3s linear;
+    cursor: pointer;
+    &:hover {
+        color: black;
+      background-color: white;
+    }
+}
+

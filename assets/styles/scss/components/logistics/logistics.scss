@@ -1,0 +1,12 @@
+.logistics-content{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    color: white;
+    
+}
+.logistics-content__item{
+    background-color:  #3b86ac;
+    border-radius: 20px;
+    padding: 3rem;
+}

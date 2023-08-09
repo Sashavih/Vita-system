@@ -1,0 +1,41 @@
+.main-box{
+    background: no-repeat center/70% url('../../img/water2.png');
+    text-align: center;
+    height: 100%;
+    h1{
+        text-transform: uppercase;
+        margin: 0 auto 2rem auto;
+       cursor: default;
+    }
+}
+.main-box__title{
+    font-family: 'stagsans', sans-serif;
+    font-size: 50px;
+    color: #0C73A7;
+}
+.main-box__subtitle{
+    font-family: 'stagsan', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    color: #000000;
+}
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 2.5rem;
+}
+#mint{
+    max-width: 11%;
+    padding-top: 0;
+}
+.main-content__elem{
+    cursor: pointer;
+    padding-top: 3rem;
+ max-width: 10%;
+ transition: 0.5s;
+&:hover{
+    transform: scale(1.03);
+}
+}

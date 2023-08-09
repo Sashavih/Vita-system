@@ -1,0 +1,45 @@
+
+.about{
+    display: flex;
+    flex-direction: column;
+    border: 1.7px solid #ee9733;
+    color: black;
+    
+    border-radius: 14px;
+    padding: 2rem 4rem;
+    width: 80%;
+    height: 100%;
+    transition: 0.4s;
+    margin: auto;
+    text-align: left;
+    &:hover{
+        border: 1.7px solid #0C73A7;
+    }
+    p{
+        margin-top: 1rem;
+    }
+}
+.about__imgs{
+   text-align: center;
+    width: 50%;
+}
+.about__imgs_item{
+        max-width: 25%;
+        cursor: pointer;
+     transition: 0.5s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+
+.modal-title{
+    font-family: 'stagsans', sans-serif;
+    text-transform: uppercase;
+    font-size: 34px;
+text-align:left;
+padding-top: 2rem ;
+padding-bottom: 1rem;
+padding-left: 5rem;
+padding-right: auto;
+    cursor: default;
+  }

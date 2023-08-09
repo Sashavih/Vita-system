@@ -1,0 +1,18 @@
+.detox{
+    background: linear-gradient(170deg,  #85C752,  #CDEAB0, #F3FBE6,#C0E667, #61B02E);
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.detox-content__img{
+    margin-bottom: 2rem;
+    text-align: center;
+      img{
+          cursor: pointer;
+     max-width: 77%;
+      transition: 0.5s;
+      &:hover{
+          transform: scale(1.02);
+      }
+  }
+  }

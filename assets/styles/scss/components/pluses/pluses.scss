@@ -1,0 +1,28 @@
+
+.pluses-box{
+    margin: 3rem auto 1rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    width: 85%;
+    cursor: default;
+    align-items: start;
+
+}
+.pluses-box__img{
+    max-width: 4.5rem;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+.pluses-box__item{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+   text-align: left;
+    gap: 0.8rem;
+    padding: 1rem;
+}

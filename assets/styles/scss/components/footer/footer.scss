@@ -1,0 +1,38 @@
+
+.footer-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  margin: 5rem auto;
+  gap: 5rem;
+    h2{
+        font-family: 'stagsans', sans-serif;
+        text-transform: uppercase;
+        font-size: 24px;
+        cursor: default;
+        transition: 0.4s;
+        margin-bottom: 2.8rem;
+    }
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    a{
+        margin-top: 0.1rem;
+        font-weight: 600;
+        &:hover{
+            color: #0C73A7;  
+             }
+    }
+}
+.logos{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 10%));
+    gap: 2rem;
+}
+.logos__item{
+    max-width: 7rem;
+}
