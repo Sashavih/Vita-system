@@ -39,17 +39,17 @@
     flex-direction: column;
     border-radius: 50px;
     padding: 0.5rem 2rem;
- border: 1.7px solid #0C73A7;
+ border: 1.7px solid #ffffff;
  transition: 0.4s;
- &:hover{
-    background-color: #0c73a76c;
- }
+ //&:hover{
+   // border: 1px solid #0c73a76c;
+ //}
    a{
     font-size: 14px;
     font-weight: 600;
-    color: #0C73A7; 
+    color: white;
     &:hover{
-       color: white;
+       color: #a1d5ee;
      }
    }
 }

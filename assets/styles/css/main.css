@@ -27,6 +27,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "stagsans-thin";
+  src: url(../../fonts/StagSans-Thin.woff2) format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -47,6 +54,11 @@ body {
   font-size: 16px;
   color: black;
   background-color: white;
+  overflow: auto;
+  background: linear-gradient(315deg, rgb(47, 199, 178) 3%, rgb(60, 132, 206) 38%, rgb(31, 169, 159) 68%, rgb(113, 103, 223) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
 }
 
 li {
@@ -194,6 +206,60 @@ hr {
     font-size: 16px;
   }
 }
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.wave {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(1);
+  }
+}
 .header {
   width: 85%;
   display: flex;
@@ -238,19 +304,16 @@ hr {
   flex-direction: column;
   border-radius: 50px;
   padding: 0.5rem 2rem;
-  border: 1.7px solid #0C73A7;
+  border: 1.7px solid #ffffff;
   transition: 0.4s;
-}
-.header__contacts:hover {
-  background-color: rgba(12, 115, 167, 0.4235294118);
 }
 .header__contacts a {
   font-size: 14px;
   font-weight: 600;
-  color: #0C73A7;
+  color: white;
 }
 .header__contacts a:hover {
-  color: white;
+  color: #a1d5ee;
 }
 
 @keyframes float {
@@ -297,9 +360,9 @@ hr {
   }
 }
 .main-box {
-  background: no-repeat center/80% url("../../img/water2.png");
   text-align: center;
   height: 100%;
+  transition: 0.5s;
 }
 .main-box h1 {
   text-transform: uppercase;
@@ -308,15 +371,14 @@ hr {
 }
 
 .main-box__title {
-  font-family: "stagsans", sans-serif;
-  font-size: 50px;
-  color: #0C73A7;
+  font-family: "stagsans-thin", sans-serif;
+  font-size: 30px;
+  color: #000000;
 }
 
 .main-box__subtitle {
-  font-family: "stagsan", sans-serif;
-  font-size: 30px;
-  font-weight: 100;
+  font-family: "stagsans", sans-serif;
+  font-size: 52px;
   color: #000000;
 }
 
@@ -352,7 +414,6 @@ hr {
     font-weight: 500;
   }
   .main-box {
-    background: no-repeat center/95% url("../../img/water2.png");
     text-align: center;
   }
   .main-content__elem {
@@ -367,7 +428,7 @@ hr {
   font-size: 15px;
   flex-direction: column;
   border-radius: 20px;
-  background-color: rgba(239, 145, 38, 0.6352941176);
+  background-color: #ee9f44;
   color: white;
   padding: 2rem;
   width: 50%;
@@ -395,7 +456,7 @@ hr {
   width: 9rem;
   text-transform: uppercase;
   color: white;
-  background-color: #ed942f;
+  background-color: #ef8127;
   font-family: inherit;
   cursor: pointer;
   font-size: 13px;

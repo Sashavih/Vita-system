@@ -1,7 +1,8 @@
 .main-box{
-    background: no-repeat center/80% url('../../img/water2.png');
+    //background: no-repeat center/80% url('../../img/water2.png');
     text-align: center;
     height: 100%;
+    transition: 0.5s;
     h1{
         text-transform: uppercase;
         margin: 0 auto 2rem auto;
@@ -9,14 +10,15 @@
     }
 }
 .main-box__title{
-    font-family: 'stagsans', sans-serif;
-    font-size: 50px;
-    color: #0C73A7;
+    font-family: 'stagsans-thin', sans-serif;
+    font-size: 30px;
+ 
+    color: #000000;
 }
 .main-box__subtitle{
-    font-family: 'stagsan', sans-serif;
-    font-size: 30px;
-    font-weight: 100;
+    font-family: 'stagsans', sans-serif;
+    font-size: 52px;
+   
     color: #000000;
 }
 .main-content{
@@ -39,6 +41,7 @@
     transform: scale(1.03);
 }
 }
+
 @media screen and (max-width: $tablet-width){
     .main-box__title{
         font-size: 36px;
@@ -48,7 +51,7 @@
         font-weight: 500;
     }
     .main-box{
-        background: no-repeat center/95% url('../../img/water2.png');
+        //background: no-repeat center/95% url('../../img/water2.png');
         text-align: center;
     }
     .main-content__elem{
@@ -58,3 +61,4 @@
         max-width: 16%;
     }
 }
+
