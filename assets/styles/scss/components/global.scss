@@ -17,7 +17,8 @@
     color: black;
     background-color: white;
     overflow: auto;
-    background: linear-gradient(315deg, rgb(47, 199, 178) 3%, rgba(60,132,206,1) 38%, rgb(31, 169, 159) 68%, rgb(113, 103, 223) 98%);
+    background: white;
+    //linear-gradient(315deg, rgb(47, 176, 199) 3%, #40a2ca 38%, #56a4cb 68%, #449fbf 98%)
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
@@ -166,7 +167,7 @@
 }
 
 .wave {
-  background: rgb(255 255 255 / 25%);
+  background: #4e91d0 ;
   border-radius: 1000% 1000% 0 0;
   position: fixed;
   width: 200%;
