@@ -39,8 +39,6 @@
     flex-direction: column;
     border-radius: 50px;
     padding: 0.5rem 2rem;
-   right: 8%;
-   top: 13%;
  border: 1.7px solid #0C73A7;
  transition: 0.4s;
  &:hover{
@@ -98,3 +96,8 @@
     animation: float 3s ease-in-out infinite;
   }
   
+  @media screen and (max-width: $tablet-width){
+    .header{
+        width: 90%;
+    }
+  }

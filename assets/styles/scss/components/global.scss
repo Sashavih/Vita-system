@@ -135,3 +135,15 @@
     background-color: #085a84;
   }
 }
+@media screen and (max-width: $tablet-width){
+  body {
+    font-size: 14px;
+  }
+  .title{
+    font-size: 32px;
+    padding: 3rem 0 0 2rem;
+  }
+  .font-weight{
+    font-size: 16px;
+   }
+}

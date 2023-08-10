@@ -26,3 +26,8 @@
     gap: 0.8rem;
     padding: 1rem;
 }
+@media screen and (max-width: $tablet-width){
+    .pluses-box__img{
+        max-width: 3.5rem;
+    }
+}

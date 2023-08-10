@@ -4,7 +4,6 @@
     flex-direction: column;
     border: 1.7px solid #ee9733;
     color: black;
-    
     border-radius: 14px;
     padding: 2rem 4rem;
     width: 80%;
@@ -42,4 +41,15 @@ padding-bottom: 1rem;
 padding-left: 5rem;
 padding-right: auto;
     cursor: default;
+  }
+
+  @media screen and (max-width: $tablet-width){
+    .about{
+        padding: 1rem 2rem;
+  }
+  
+.modal-title{
+    font-size: 28px;
+}
+
   }

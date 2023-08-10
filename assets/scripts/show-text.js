@@ -19,3 +19,4 @@
     $('.title-animation').fadeIn(1200);
    
 })
+

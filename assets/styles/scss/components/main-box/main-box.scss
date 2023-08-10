@@ -1,5 +1,5 @@
 .main-box{
-    background: no-repeat center/70% url('../../img/water2.png');
+    background: no-repeat center/80% url('../../img/water2.png');
     text-align: center;
     height: 100%;
     h1{
@@ -38,4 +38,23 @@
 &:hover{
     transform: scale(1.03);
 }
+}
+@media screen and (max-width: $tablet-width){
+    .main-box__title{
+        font-size: 36px;
+    }
+    .main-box__subtitle{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .main-box{
+        background: no-repeat center/95% url('../../img/water2.png');
+        text-align: center;
+    }
+    .main-content__elem{
+     max-width: 14.5%;
+    }
+    #mint{
+        max-width: 16%;
+    }
 }

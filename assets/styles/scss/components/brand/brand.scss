@@ -3,7 +3,6 @@
     display: flex;
     font-size: 15px;
     flex-direction: column;
-    width: 100%;
     border-radius: 20px;
    background-color:#ef9126a2;
     color: white;
@@ -48,6 +47,21 @@
     &:hover {
         color: black;
       background-color: white;
+    }
+}
+@media screen and (max-width: $tablet-width){
+    .brand{
+        width: 82%;
+        padding: 1rem 2rem;
+        transition: 0.4s;
+        margin:3rem auto;
+        p{
+            margin-top: 1rem;
+        }
+      
+    }
+    .brand-content{
+        padding-bottom: 14rem;
     }
 }
 
