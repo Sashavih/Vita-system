@@ -363,6 +363,7 @@ hr {
   }
 }
 .main-box {
+  background: no-repeat center/80% url("../../img/water2.png");
   text-align: center;
   height: 100%;
   transition: 0.5s;
