@@ -2,7 +2,7 @@ let modal = $modal({
     content: `
     
     <section>
-    <h2 class="modal-title orange">о бренде</h2>
+    <h2 class="modal-title blue">о бренде</h2>
     <div class="about">
     <p class="brand__text">Vitasystem — безалкогольный негазированный низкокалорийный напиток, обогащенный
       витаминами, минералами, пребиотиками и пробиотиками. В линейке представлены 3 ярких

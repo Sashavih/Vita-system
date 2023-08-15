@@ -2,8 +2,8 @@
 .about{
     display: flex;
     flex-direction: column;
-    border: 1.7px solid #ee9733;
-    color: black;
+    background-color: #0c73a7d1;
+    color: white;
     border-radius: 14px;
     padding: 2rem 4rem;
     width: 80%;
@@ -12,7 +12,8 @@
     margin: auto;
     text-align: left;
     &:hover{
-        border: 1.7px solid #0C73A7;
+        background-color: #0C73A7;
+  
     }
     p{
         margin-top: 1rem;

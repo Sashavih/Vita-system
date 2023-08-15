@@ -1,41 +1,41 @@
 .main-box{
-    background: no-repeat center/80% url('../../img/water2.png');
+   // background: no-repeat center/80% url('../../img/water2.png');
     text-align: center;
     height: 100%;
     transition: 0.5s;
     h1{
         text-transform: uppercase;
-        margin: 0 auto 2rem auto;
+        margin: 1.5rem auto 0 auto;
        cursor: default;
     }
 }
 .main-box__title{
     font-family: 'stagsans-thin', sans-serif;
     font-size: 30px;
- 
     color: #000000;
 }
 .main-box__subtitle{
     font-family: 'stagsans', sans-serif;
     font-size: 52px;
-   
     color: #000000;
 }
 .main-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2rem;
+    align-items: center;
+    //gap: 2rem;
     padding-bottom: 2.5rem;
 }
 #mint{
-    max-width: 11%;
+   //max-width: 28%;
     padding-top: 0;
 }
+
 .main-content__elem{
     cursor: pointer;
-    padding-top: 3rem;
- max-width: 10%;
+   // padding-top: 3rem;
+ max-width:25%;
  transition: 0.5s;
 &:hover{
     transform: scale(1.03);

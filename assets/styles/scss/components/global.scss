@@ -37,7 +37,7 @@
     margin-bottom: 0.5rem;
     cursor: default;
     transition: 0.4s;
-    padding: 3rem 0 0 5rem;
+    padding: 5rem 0 0 5rem;
   }
 
   .title-blue{
@@ -73,11 +73,20 @@
   .pink{
     color: #DE507C;
   }
+  .back-pink{
+    background-color:  #DE507C;
+  }
   .orange{
     color: #EF9226;
   }
+  .back-orange{
+    background-color:  #EF9226;
+  }
  .green{
     color: #61B02E;
+  }
+  .back-green{
+    background-color:  #61B02E;
   }
   .blue{
     color: #0C73A7;
@@ -112,27 +121,21 @@
   text-decoration: none;
   transition: background-color 0.3s linear;
   cursor: pointer;
+  &:hover{
+    opacity: 70%;
+  }
  }
  .pink-btn{
   background-color: #F77E99;
   border: 2px solid #F77E99;
-  &:hover {
-    background-color: #f9597c;
-  }
 }
 .orange-btn{
   background-color: #EF9226;
   border: 2px solid #EF9226;
-  &:hover {
-    background-color:#f38405;
-  }
 }
 .green-btn{
   background-color: #61B02E;
   border: 2px solid #61B02E;
-  &:hover {
-    background-color: #3f9108;
-  }
 }
 .blue-btn{
   background-color: #0C73A7;

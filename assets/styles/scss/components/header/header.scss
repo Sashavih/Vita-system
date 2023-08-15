@@ -1,11 +1,23 @@
 .header{
-    width: 85%;
+    width: 90%;
+    position: fixed;
+    top: 0;
+    left:5%;
+    right: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 500;
    align-items: center;
-  padding: 1.5rem 0 2rem 0;
+ // padding: 1.5rem 0 2rem 0;
+ padding: 1rem 0 0.5rem 0;
   margin: auto;
+}
+.header__nav{
+  position: fixed;
+  left: 66%;
+  right: 5%;
+  top: 2%;
 }
 .header__item{
     display: flex;
@@ -28,9 +40,10 @@
     }
 }
 .header__logo{
+  display: block;
     cursor:default;
     img{
-        max-width: 6rem;
+        max-width: 7rem;
         cursor: pointer;
     }
 }
@@ -95,7 +108,30 @@
     transform: translatey(0px);
     animation: float 3s ease-in-out infinite;
   }
-  
+  .section-btn{
+    display: block;
+    position: fixed;
+    background-image: url("../../img/back-arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45%;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    //margin: 1.2rem 0 0 3rem;
+   top: 1.4rem;
+    left: 5rem;
+    z-index: 99;
+    border: none;
+    outline: none;
+    opacity: 100%;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    animation: float 3s ease-in-out infinite;
+  }
   @media screen and (max-width: $tablet-width){
     .header{
         width: 90%;
