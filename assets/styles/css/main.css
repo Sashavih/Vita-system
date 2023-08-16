@@ -214,7 +214,7 @@ a {
     text-align: center;
     font-size: 24px;
     padding: 0;
-    margin-top: 3.5rem;
+    margin-top: 4rem;
   }
   .font-weight {
     font-size: 15px;
@@ -242,15 +242,14 @@ a {
   justify-content: space-between;
   z-index: 500;
   align-items: center;
-  padding: 1rem 0 0.5rem 0;
+  padding: 1rem 0;
   margin: auto;
 }
 
 .header__nav {
   position: fixed;
-  right: 5%;
+  right: 1%;
   width: 100%;
-  top: 2%;
 }
 
 .header__item {
@@ -351,7 +350,7 @@ a {
   width: 3rem;
   height: 3rem;
   padding: 1rem;
-  top: 1.4rem;
+  top: 1.8rem;
   left: 5rem;
   z-index: 99;
   border: none;
@@ -420,13 +419,13 @@ a {
 
 .main-box__title {
   font-family: "stagsans-thin", sans-serif;
-  font-size: 30px;
+  font-size: 26px;
   color: #000000;
 }
 
 .main-box__subtitle {
   font-family: "stagsans", sans-serif;
-  font-size: 52px;
+  font-size: 44px;
   color: #000000;
 }
 
@@ -440,12 +439,12 @@ a {
 }
 
 #active-buttle {
-  max-width: 16.3rem;
+  max-width: 15.3rem;
 }
 
 .main-content__elem {
   cursor: pointer;
-  max-width: 14rem;
+  max-width: 13rem;
   transition: 0.3s;
 }
 .main-content__elem:hover {
@@ -467,6 +466,7 @@ a {
     margin: 1.5rem auto 0 auto;
   }
   .main-content {
+    gap: 0;
     margin: 7rem auto 4rem auto;
   }
   .main-content__elem {

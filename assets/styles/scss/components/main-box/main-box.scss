@@ -12,12 +12,12 @@
 }
 .main-box__title{
     font-family: 'stagsans-thin', sans-serif;
-    font-size: 30px;
+    font-size: 26px;
     color: #000000;
 }
 .main-box__subtitle{
     font-family: 'stagsans', sans-serif;
-    font-size: 52px;
+    font-size: 44px;
     color: #000000;
 }
 .main-content{
@@ -30,12 +30,12 @@
 }
 
 #active-buttle{
-    max-width:16.3rem;
+    max-width:15.3rem;
 }
 
 .main-content__elem{
     cursor: pointer;
- max-width:14rem;
+ max-width:13rem;
  transition: 0.3s;
 &:hover{
     transform: scale(1.05);
@@ -57,6 +57,7 @@
         }
     }
     .main-content{
+        gap: 0;
         margin: 7rem auto 4rem auto;
     }
     .main-content__elem{
