@@ -9,6 +9,10 @@
     height: 100%;
     gap: 1rem;
 }
+.section-column{
+    display: flex;
+    flex-direction: column;
+}
 .immuno-text{
     width: 90%;
     cursor: default;
@@ -19,7 +23,7 @@
     align-items: baseline;
    gap: 0.4rem;
     margin: 2rem 2rem 4rem 5rem;
-    justify-items: center;
+
 }
 .content__elem{
     display: flex;
