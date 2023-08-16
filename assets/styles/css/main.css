@@ -275,11 +275,10 @@ a {
 
 .header__logo {
   display: block;
-  cursor: default;
+  cursor: pointer;
 }
 .header__logo img {
   max-width: 7rem;
-  cursor: pointer;
 }
 
 .header__contacts {
@@ -436,6 +435,7 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   padding-bottom: 2.5rem;
 }
 
@@ -446,10 +446,10 @@ a {
 .main-content__elem {
   cursor: pointer;
   max-width: 14rem;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .main-content__elem:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 810px) {
@@ -509,6 +509,10 @@ a {
   width: 50%;
   transition: 0.4s;
   margin: 2rem 0 0 3rem;
+  transition: 0.2s;
+}
+.brand:hover {
+  transform: scale(1.003);
 }
 .brand p {
   margin-top: 1rem;
@@ -673,10 +677,10 @@ a {
 .content__img img {
   cursor: pointer;
   max-width: 65%;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .content__img img:hover {
-  transform: scale(1.02);
+  transform: scale(1.04);
 }
 
 @media screen and (max-width: 810px) {

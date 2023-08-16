@@ -10,6 +10,10 @@
     width: 50%;
     transition: 0.4s;
     margin:2rem 0 0 3rem;
+    transition: 0.2s;
+    &:hover{
+        transform: scale(1.003);
+    }
     p{
         margin-top: 1rem;
     }

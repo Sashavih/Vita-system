@@ -10,6 +10,10 @@ $('body').on('click', '#immuno-buttle', function(e){
     document.location.href = 'immuno.html';
 }
 )
+$('body').on('click', '.header__logo', function(e){
+    document.location.href = 'index.html';
+}
+)
 
 //fadeout logo scroll
 

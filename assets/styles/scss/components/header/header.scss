@@ -23,7 +23,6 @@
     flex-direction: row ;
     justify-content: end;
     align-items: center;
-
     li{
         margin: 0 0.8rem;
         transition: 0.1s;
@@ -40,10 +39,9 @@
 }
 .header__logo{
   display: block;
-    cursor:default;
+  cursor:pointer;
     img{
         max-width: 7rem;
-        cursor: pointer;
     }
 }
 .header__contacts{
