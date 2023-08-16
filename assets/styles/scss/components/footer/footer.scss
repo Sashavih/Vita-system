@@ -5,7 +5,7 @@
  justify-content: space-around;
  align-items: baseline;
   margin: 3rem 0;
-  gap: 2rem;
+  gap: 1rem;
     h2{
         font-family: 'stagsans', sans-serif;
         text-transform: uppercase;
@@ -72,13 +72,18 @@
 }
 @media screen and (max-width: $mobile-width){
   .footer{
- justify-content: space-between;
- margin: 2rem 0;
+    width: 90%;
+    
+ //justify-content: space-between;
+ margin: 2rem auto;
+ h2{
+    font-size: 16px;
+}
   }
   .logos-content{
     margin-right: 0.5rem;
     img{
-        max-width: 4.5rem; 
+        max-width: 3rem; 
     }
 }
 .contacts{

@@ -386,7 +386,7 @@ a {
   }
   .messageAnimation {
     right: 2rem;
-    bottom: 13rem;
+    bottom: 10rem;
   }
   .header__contacts {
     width: 60%;
@@ -692,9 +692,9 @@ a {
   }
   .content {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     font-size: 13px;
-    width: 100%;
-    align-items: baseline;
+    width: 90%;
     gap: 1rem;
     margin: 3rem 0rem 10rem 2rem;
     justify-items: center;
@@ -721,7 +721,7 @@ a {
     grid-template-columns: 1fr 1fr;
     margin: 2rem auto 8rem auto;
     justify-items: center;
-    width: 90%;
+    width: 95%;
   }
   .content-margin {
     margin: 1rem auto;
@@ -1058,7 +1058,7 @@ a {
   justify-content: space-around;
   align-items: baseline;
   margin: 3rem 0;
-  gap: 2rem;
+  gap: 1rem;
 }
 .footer h2 {
   font-family: "stagsans", sans-serif;
@@ -1126,14 +1126,17 @@ a {
 }
 @media screen and (max-width: 480px) {
   .footer {
-    justify-content: space-between;
-    margin: 2rem 0;
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .footer h2 {
+    font-size: 16px;
   }
   .logos-content {
     margin-right: 0.5rem;
   }
   .logos-content img {
-    max-width: 4.5rem;
+    max-width: 3rem;
   }
   .contacts {
     margin-left: 0.5rem;
@@ -1203,7 +1206,7 @@ a {
   position: fixed;
   padding-top: 1.5rem;
   text-align: center;
-  top: 4rem;
+  top: 3.5rem;
   z-index: 20;
   display: flex;
   flex-flow: column;

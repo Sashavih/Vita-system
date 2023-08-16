@@ -62,9 +62,10 @@
     }
     .content{
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         font-size: 13px;
-        width: 100%;
-        align-items: baseline;
+        width: 90%;
+        //align-items: center;
         gap: 1rem;
         margin: 3rem 0rem 10rem 2rem;
         justify-items: center;
@@ -93,7 +94,7 @@ display: none;
         grid-template-columns: 1fr 1fr;
         margin: 2rem auto 8rem auto;
         justify-items: center;
-        width: 90%;
+        width: 95%;
     }
     .content-margin {
        margin: 1rem auto;
