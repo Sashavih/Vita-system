@@ -144,8 +144,6 @@ a {
 
 .show {
   display: block;
-  transform: translateY(-50%);
-  animation: ani2 1.5s forwards;
 }
 
 .btn {
