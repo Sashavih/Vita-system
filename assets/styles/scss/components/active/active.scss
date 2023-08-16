@@ -9,7 +9,7 @@
     text-align: center;
       img{
           cursor: pointer;
-     max-width: 82%;
+     max-width: 75%;
       transition: 0.5s;
       &:hover{
           transform: scale(1.02);
@@ -22,9 +22,8 @@
   }
   @media screen and (max-width: $tablet-width){
     .active-content__img{
-        width: 100%;
         img{
-       max-width: 100%;
+       max-width: 90%;
     }
     }
   }

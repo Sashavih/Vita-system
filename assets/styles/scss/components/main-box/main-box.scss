@@ -5,7 +5,8 @@
     transition: 0.5s;
     h1{
         text-transform: uppercase;
-        margin: 1.5rem auto 0 auto;
+        //margin: 1.5rem auto 0 auto;
+        margin: 5rem auto 0 auto;
        cursor: default;
     }
 }
@@ -27,15 +28,14 @@
     //gap: 2rem;
     padding-bottom: 2.5rem;
 }
-#mint{
-   //max-width: 28%;
-    padding-top: 0;
+
+#active-buttle{
+    max-width:16.3rem;
 }
 
 .main-content__elem{
     cursor: pointer;
-   // padding-top: 3rem;
- max-width:25%;
+ max-width:14rem;
  transition: 0.5s;
 &:hover{
     transform: scale(1.03);
@@ -52,9 +52,12 @@
     }
     .main-box{
         text-align: center;
+        h1{
+            margin: 1.5rem auto 0 auto;
+        }
     }
     .main-content__elem{
-     max-width:35%;
+     max-width:30%;
     }
 }
 @media screen and (max-width: $mobile-width){
@@ -76,5 +79,8 @@
     .main-content__elem{
         max-width:33%;
        }
+       #active-buttle{
+        max-width:38.9%;
+    }
 }
 

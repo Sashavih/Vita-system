@@ -17,6 +17,8 @@
   $(function () {
     $('.header__nav').fadeIn(1000);
     $('.title-animation').fadeIn(1200);
-   
+    $('#active-buttle').fadeIn(1000);
+    $('#immuno-buttle').fadeIn(1000);
+    $('#mint').fadeIn(1000);
 })
 
