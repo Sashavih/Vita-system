@@ -17,8 +17,8 @@
 }
 .brand-content{
     //background:no-repeat  url("../../img/pomelo33.png");
-    background-size: 50%;
-    background-position: 100% 100%;
+    //background-size: 50%;
+    //background-position: 100% 100%;
     padding-bottom: 15rem;
 }
 
@@ -64,4 +64,12 @@
         padding-bottom: 14rem;
     }
 }
-
+@media screen and (max-width: $mobile-width){
+    .brand{
+    padding: 2rem;
+    margin: 1.5rem auto;
+    }
+    .brand-content{
+        padding-bottom: 6rem;
+    }
+}

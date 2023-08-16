@@ -47,18 +47,34 @@
         font-size: 36px;
     }
     .main-box__subtitle{
-        font-size: 22px;
+        font-size: 30px;
         font-weight: 500;
     }
     .main-box{
-        //background: no-repeat center/95% url('../../img/water2.png');
         text-align: center;
     }
     .main-content__elem{
-     max-width: 14.5%;
+     max-width:35%;
     }
-    #mint{
-        max-width: 16%;
+}
+@media screen and (max-width: $mobile-width){
+    .main-box__title{
+        font-size: 24px;
     }
+    .main-box__subtitle{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .main-box{
+         h1{
+             margin: 2rem auto 2rem auto;
+         }
+     }
+     .main-content{
+        padding-bottom: 0;
+    }
+    .main-content__elem{
+        max-width:33%;
+       }
 }
 

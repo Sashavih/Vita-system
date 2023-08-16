@@ -29,4 +29,10 @@
     }
     }
   }
+  @media screen and (max-width: $mobile-width) {
+    .active-content__img{
+display: none;
+    }
+}
+
  

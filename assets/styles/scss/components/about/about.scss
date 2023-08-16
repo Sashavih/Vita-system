@@ -13,7 +13,6 @@
     text-align: left;
     &:hover{
         background-color: #0C73A7;
-  
     }
     p{
         margin-top: 1rem;
@@ -52,5 +51,17 @@ padding-right: auto;
 .modal-title{
     font-size: 28px;
 }
-
+  }
+  @media screen and (max-width: $mobile-width){
+    .mob-none{
+        display: none;
+    }
+    .about{
+        padding: 1.5rem ;
+    width: 90%;
+    }
+    .modal-title{
+        padding-left: 2rem;
+        font-size: 24px;
+    }
   }

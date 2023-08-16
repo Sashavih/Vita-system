@@ -31,3 +31,14 @@
         max-width: 3.5rem;
     }
 }
+@media screen and (max-width: $mobile-width){
+    .pluses-box__img{
+        max-width: 2rem;
+    }
+    .pluses-box{
+        margin: 1rem auto ;
+        gap: 0.5rem;
+        width: 100%;
+  }
+}
+  

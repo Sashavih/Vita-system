@@ -3,7 +3,7 @@
    display: flex;
    flex-direction: row;
  justify-content: space-around;
-    align-items: center;
+ align-items: baseline;
   margin: 3rem 0;
   gap: 2rem;
     h2{
@@ -13,7 +13,6 @@
         cursor: default;
         transition: 0.4s;
         padding-bottom: 2.8rem;
-
     }
 }
 .contacts{
@@ -70,4 +69,20 @@
     .logos-content{
         margin-right: 3rem;
     }
+}
+@media screen and (max-width: $mobile-width){
+
+  .footer{
+ justify-content: space-between;
+  }
+  .logos-content{
+    margin-right: 0.5rem;
+    img{
+        max-width: 4.5rem; 
+    }
+}
+.contacts{
+    margin-left: 0.5rem;
+    text-align: start;
+}
 }

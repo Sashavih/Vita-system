@@ -77,3 +77,35 @@
         }
     }
 }
+@media screen and (max-width: $mobile-width) {
+    .content__img{
+display: none;
+    }
+    .content{
+        margin: 2rem auto;
+        justify-items: center;
+        width: 90%;
+    }
+    .content-margin {
+       margin: 1rem auto;
+       text-align: center;
+    }
+    .text-padding{
+        padding: 0 1rem;
+    }
+    .content__elem{
+         img{
+             max-width: 4rem;
+             margin-bottom: 1rem;
+         }
+     }
+     .mob-section-boxtitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .immuno-text{
+width: 100%;
+     }
+}
