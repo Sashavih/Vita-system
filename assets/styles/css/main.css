@@ -603,8 +603,13 @@ hr {
   }
   .pluses-box {
     margin: 1rem auto;
-    gap: 0.5rem;
+    gap: 0;
     width: 100%;
+  }
+  .pluses-box__item {
+    align-items: center;
+    gap: 0.2rem;
+    padding: 1rem;
   }
 }
 .content-margin {
@@ -627,8 +632,8 @@ hr {
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.5rem;
-  margin: 2rem 2rem 2rem 5rem;
+  align-items: center;
+  margin: 2rem 2rem 5rem 5rem;
   justify-items: center;
 }
 
@@ -670,9 +675,10 @@ hr {
   }
   .content {
     font-size: 13px;
-    width: 100%;
+    width: 90%;
+    align-items: baseline;
     gap: 1rem;
-    margin: 3rem 0rem 2rem 2rem;
+    margin: 3rem 0rem 7rem 2rem;
     justify-items: center;
   }
   .content__img {
@@ -696,7 +702,7 @@ hr {
     display: none;
   }
   .content {
-    margin: 2rem auto;
+    margin: 2rem auto 7rem auto;
     justify-items: center;
     width: 90%;
   }
@@ -925,7 +931,7 @@ hr {
 @media screen and (max-width: 480px) {
   .modal__content {
     width: 90%;
-    margin: 5rem auto;
+    margin: 3rem auto;
   }
 }
 .preloader {
@@ -1117,7 +1123,7 @@ hr {
 .burger-menu_button {
   position: fixed;
   top: 0.5rem;
-  right: 1.5rem;
+  right: 1rem;
   z-index: 30;
   width: 40px;
   height: 40px;
