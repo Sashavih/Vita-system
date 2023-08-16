@@ -105,13 +105,6 @@ a {
   color: #61B02E;
 }
 
-hr {
-  margin: auto;
-  width: 90%;
-  height: 1.5px;
-  background-color: rgba(12, 115, 167, 0.0705882353);
-}
-
 .pink {
   color: #DE507C;
 }
@@ -473,8 +466,14 @@ hr {
   .main-box h1 {
     margin: 1.5rem auto 0 auto;
   }
+  .main-content {
+    margin: 7rem auto 4rem auto;
+  }
   .main-content__elem {
     max-width: 30%;
+  }
+  #active-buttle {
+    max-width: 35.8%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -486,16 +485,17 @@ hr {
     font-weight: 500;
   }
   .main-box h1 {
-    margin: 2rem auto 2rem auto;
+    margin: 4rem auto 2rem auto;
   }
   .main-content {
+    margin: 7rem auto;
     padding-bottom: 0;
   }
   .main-content__elem {
-    max-width: 33%;
+    max-width: 31%;
   }
   #active-buttle {
-    max-width: 38.9%;
+    max-width: 36%;
   }
 }
 .brand {
@@ -1152,7 +1152,7 @@ hr {
   display: none;
 }
 
-.burger-menu_button:hover {
+.burger-menu_button {
   background-color: rgba(12, 115, 167, 0.1882352941);
 }
 

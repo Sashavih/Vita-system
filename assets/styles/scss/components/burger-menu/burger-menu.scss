@@ -17,10 +17,9 @@
   }
   
   .burger-menu_button{
-    &:hover {
     background-color: #0c73a730;
   }
-  }
+
   .burger-menu_button:hover .burger-menu_lines {
     filter: brightness(0.7);
   }
