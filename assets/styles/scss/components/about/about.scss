@@ -2,8 +2,9 @@
 .about{
     display: flex;
     flex-direction: column;
-    background-color: #0c73a7d1;
-    color: white;
+    //background-color: #0c73a7d1;
+    border: 1.7px solid #0c73a7;
+    color: rgb(0, 0, 0);
     border-radius: 14px;
     padding: 2rem 4rem;
     width: 80%;
@@ -12,7 +13,7 @@
     margin: auto;
     text-align: left;
     &:hover{
-        background-color: #0C73A7;
+        border: 1.7px solid #0c73a782;
     }
     p{
         margin-top: 1rem;
@@ -45,6 +46,7 @@ padding-right: auto;
 
   @media screen and (max-width: $tablet-width){
     .about{
+        width: 90%;
         padding: 1rem 2rem;
   }
   
@@ -59,7 +61,6 @@ padding-right: auto;
     .about{
         font-size: 14px;
         padding: 1.5rem ;
-    width: 90%;
     }
     .modal-title{
         padding-left: 2rem;

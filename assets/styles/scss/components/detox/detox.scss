@@ -2,7 +2,7 @@
     background: linear-gradient(170deg,  #85C752,  #CDEAB0, #F3FBE6,#C0E667, #61B02E);
     display: flex;
     flex-direction: row;
-    height: 100%;
+    min-height: 100vh;
 }
 .detox-content__img{
     margin-bottom: 2rem;
@@ -24,6 +24,9 @@
     }
 }
 @media screen and (max-width: $mobile-width){
+    .detox{
+        flex-direction: column;
+    }
     .detox-content__img{
      display: none;
     }

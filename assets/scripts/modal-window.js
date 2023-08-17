@@ -4,7 +4,7 @@ let modal = $modal({
     <section>
     <h2 class="modal-title blue">о бренде</h2>
     <div class="about">
-    <p class="brand__text">Vitasystem — безалкогольный негазированный низкокалорийный напиток, обогащенный
+    <p class="brand__text"><span class="blue">Vitasystem</span> — безалкогольный негазированный низкокалорийный напиток, обогащенный
       витаминами, минералами, пребиотиками и пробиотиками. <br/>В линейке представлены 3 ярких
       фруктовых вкуса: «Малина-Шиповник», «Помело-Клубника», «Яблоко-Мята».</p>
       <p class="brand__text">Отличительной особенностью <span class="pink font-bold">Vitasystem Immuno</span> и <span class="orange font-bold">Vitasystem Active</span> являются уникальные
@@ -20,7 +20,6 @@ let modal = $modal({
   </div>
   <h2 class="modal-title blue">преимущества</h2>
   <div class="pluses-box">
-    <div class="pluses-box__colomn">
     <div class="pluses-box__item"><img class="pluses-box__img" src="./assets/img/save.png" alt=""/><p><span class="brand__text_bold">СОХРАНЯЕМ ВИТАМИНЫ</span> <br><span class="mob-none">Термоусадочная непрозрачная
       пленка на упаковке не пропускает
       солнечный свет и сохраняет витамины</span></p></div>
@@ -28,8 +27,6 @@ let modal = $modal({
       АРОМАТИЗАТОРЫ
       И ЭКСТРАКТЫ</span><br><span class="mob-none">Используем только натуральные
         ароматизаторы: ягоды и фрукты</span></p></div>
-      </div>
-      <div class="pluses-box__colomn">
     <div class="pluses-box__item"><img class="pluses-box__img" src="./assets/img/lub.png" alt=""/><p><span class="brand__text_bold">БЕЗ КОНСЕРВАНТОВ</span><br><span class="mob-none">В производстве используется технология
       горячего розлива, что обеспечивает
       длительный срок хранения напитка
@@ -39,8 +36,7 @@ let modal = $modal({
         разработана в Германии и содержит
         дефицитные группы витаминов
         и микроэлементов</span></p></div>
-      </div>
-  </div>
+        </div>
   </section>`,
 });
 
