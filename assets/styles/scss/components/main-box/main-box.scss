@@ -1,7 +1,7 @@
 .main-box{
    // background: no-repeat center/80% url('../../img/water2.png');
     text-align: center;
-    height: 100%;
+    min-height: 100vh;
     transition: 0.5s;
     h1{
         text-transform: uppercase;
@@ -51,6 +51,7 @@
         font-weight: 500;
     }
     .main-box{
+
         text-align: center;
         h1{
             margin: 1.5rem auto 0 auto;
