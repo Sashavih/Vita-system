@@ -1,15 +1,48 @@
 .main-box{
-    background: no-repeat center/80% url('../../img/water2.png');
+    //background: no-repeat center/80% url('../../img/water-ani.mp4');
     text-align: center;
+    overflow: hidden;
+  position: relative;
     min-height: 100vh;
     transition: 0.5s;
     h1{
         text-transform: uppercase;
-        //margin: 1.5rem auto 0 auto;
-        margin: 5rem auto 0 auto;
+        margin: 4rem auto 0 auto;
        cursor: default;
     }
 }
+//video
+.page {
+    position: relative;
+  }
+   
+  .page-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+   
+  .page-video .video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+  }
+   
+  .content-video {
+    position: relative;
+    z-index: 2;
+  }
+
+
+
 .main-box__title{
     font-family: 'stagsans-thin', sans-serif;
     font-size: 26px;
@@ -35,11 +68,23 @@
 
 .main-content__elem{
     cursor: pointer;
+    animation: animate_grow 2s ease-in-out;
  max-width:13rem;
  transition: 0.3s;
 &:hover{
     transform: scale(1.05);
 }
+}
+@keyframes animate_grow {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+	50% {
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
 }
 
 @media screen and (max-width: $tablet-width){
@@ -62,6 +107,7 @@
         margin: 7rem auto 4rem auto;
     }
     .main-content__elem{
+        animation: animate_grow 2.5s infinite;
      max-width:30%;
      &:hover{
         transform: scale(1);

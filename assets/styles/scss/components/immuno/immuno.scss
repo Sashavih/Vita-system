@@ -59,15 +59,15 @@
     }
 }
 }
+
 @media screen and (max-width: $tablet-width){
     .content-margin{
         margin: 1rem 2rem;
     }
     .content{
-        grid-template-columns: 1fr 1fr;
+       // grid-template-columns: 1fr 1fr;
         font-size: 13px;
         width: 90%;
-        //align-items: center;
         gap: 0.5rem 1.5rem;
         margin: 3rem 0rem 5rem 2rem;
         padding-bottom: 15rem;
@@ -75,6 +75,7 @@
     }
     .content__img{
         img{
+         
        max-width: 90%;
     }
     }
@@ -95,9 +96,10 @@
     }
     .content{
         font-size: 12px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        margin: 2rem auto;
+       // grid-template-columns: 1fr 1fr;
+        //grid-template-rows: 1fr 1fr 1fr;
+        padding: 0;
+        margin: 2rem auto  0 auto;
         justify-items: center;
         width: 95%;
     }

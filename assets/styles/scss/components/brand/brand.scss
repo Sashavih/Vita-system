@@ -4,8 +4,9 @@
     font-size: 16px;
     flex-direction: column;
     border-radius: 20px;
-   background-color:  #0c73a7c5;
-    color: white;
+   //background-color:  #0c73a7c5;
+   border: 1.7px solid #0c73a7c5 ;
+    color: rgb(0, 0, 0);
     padding: 2rem;
     width: 50%;
     transition: 0.4s;
@@ -17,13 +18,19 @@
     p{
         margin-top: 1rem;
     }
-  
 }
+.brand-title{
+    font-family: 'stagsans', sans-serif;
+    text-transform: uppercase;
+    font-size: 42px;
+    margin-bottom: 0.5rem;
+    cursor: default;
+    transition: 0.4s;
+    padding: 5rem 0 0 5rem;
+  }
+
 .brand-content{
-    //background:no-repeat  url("../../img/pomelo33.png");
-    //background-size: 50%;
-    //background-position: 100% 100%;
-    padding-bottom: 15rem;
+    min-height: 100vh;
 }
 
 .brand__text_bold{
@@ -64,9 +71,15 @@
         }
       
     }
-    .brand-content{
-        padding-bottom: 14rem;
+    .brand-title{
+        font-size: 32px;
     }
+    .brand-title{
+        text-align: center;
+        font-size: 24px;
+        padding: 0;
+      }
+   
 }
 @media screen and (max-width: $mobile-width){
     .brand{

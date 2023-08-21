@@ -56,7 +56,6 @@ body {
   background-color: white;
   overflow: auto;
   background: white;
-  animation: gradient 15s ease infinite;
   background-size: 400% 400%;
   background-attachment: fixed;
   height: 100%;
@@ -168,11 +167,23 @@ a {
   text-decoration: none;
   transition: background-color 0.3s linear;
   cursor: pointer;
+  animation: animate_grow 2s infinite;
 }
 .btn:hover {
   opacity: 80%;
 }
 
+@keyframes animate_grow {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
 .pink-btn {
   background-color: #F77E99;
   border: 2px solid #F77E99;
@@ -204,6 +215,12 @@ a {
   display: none;
 }
 
+.brand-back {
+  background: no-repeat url("../../img/brand.jpg");
+  background-position: 85% 100%;
+  background-size: 50%;
+}
+
 @media screen and (max-width: 810px) {
   body {
     font-size: 14px;
@@ -215,6 +232,10 @@ a {
   }
   .font-weight {
     font-size: 16px;
+  }
+  .brand-back {
+    background-position: 50% 80%;
+    background-size: 100%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -232,17 +253,6 @@ a {
   }
   #mobile {
     display: block;
-  }
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
   }
 }
 .header {
@@ -263,6 +273,7 @@ a {
 .header__nav {
   position: fixed;
   right: 1%;
+  top: 1%;
   width: 100%;
 }
 
@@ -417,15 +428,45 @@ a {
   }
 }
 .main-box {
-  background: no-repeat center/80% url("../../img/water2.png");
   text-align: center;
+  overflow: hidden;
+  position: relative;
   min-height: 100vh;
   transition: 0.5s;
 }
 .main-box h1 {
   text-transform: uppercase;
-  margin: 5rem auto 0 auto;
+  margin: 4rem auto 0 auto;
   cursor: default;
+}
+
+.page {
+  position: relative;
+}
+
+.page-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page-video .video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content-video {
+  position: relative;
+  z-index: 2;
 }
 
 .main-box__title {
@@ -455,6 +496,7 @@ a {
 
 .main-content__elem {
   cursor: pointer;
+  animation: animate_grow 2s ease-in-out;
   max-width: 13rem;
   transition: 0.3s;
 }
@@ -462,6 +504,17 @@ a {
   transform: scale(1.05);
 }
 
+@keyframes animate_grow {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
 @media screen and (max-width: 810px) {
   .main-box__title {
     font-size: 36px;
@@ -481,6 +534,7 @@ a {
     margin: 7rem auto 4rem auto;
   }
   .main-content__elem {
+    animation: animate_grow 2.5s infinite;
     max-width: 30%;
   }
   .main-content__elem:hover {
@@ -517,8 +571,8 @@ a {
   font-size: 16px;
   flex-direction: column;
   border-radius: 20px;
-  background-color: rgba(12, 115, 167, 0.7725490196);
-  color: white;
+  border: 1.7px solid rgba(12, 115, 167, 0.7725490196);
+  color: rgb(0, 0, 0);
   padding: 2rem;
   width: 50%;
   transition: 0.4s;
@@ -532,8 +586,18 @@ a {
   margin-top: 1rem;
 }
 
+.brand-title {
+  font-family: "stagsans", sans-serif;
+  text-transform: uppercase;
+  font-size: 42px;
+  margin-bottom: 0.5rem;
+  cursor: default;
+  transition: 0.4s;
+  padding: 5rem 0 0 5rem;
+}
+
 .brand-content {
-  padding-bottom: 15rem;
+  min-height: 100vh;
 }
 
 .brand__text_bold {
@@ -575,8 +639,13 @@ a {
   .brand p {
     margin-top: 1rem;
   }
-  .brand-content {
-    padding-bottom: 14rem;
+  .brand-title {
+    font-size: 32px;
+  }
+  .brand-title {
+    text-align: center;
+    font-size: 24px;
+    padding: 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -713,7 +782,6 @@ a {
     margin: 1rem 2rem;
   }
   .content {
-    grid-template-columns: 1fr 1fr;
     font-size: 13px;
     width: 90%;
     gap: 0.5rem 1.5rem;
@@ -741,9 +809,8 @@ a {
   }
   .content {
     font-size: 12px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 2rem auto;
+    padding: 0;
+    margin: 2rem auto 0 auto;
     justify-items: center;
     width: 95%;
   }

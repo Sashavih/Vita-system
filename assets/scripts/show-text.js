@@ -20,5 +20,8 @@
     $('#active-buttle').fadeIn(1000);
     $('#immuno-buttle').fadeIn(1000);
     $('#mint').fadeIn(1000);
+    $('.brand').fadeIn(2000);
+    $('.brand-title').fadeIn(1500);
+ 
 })
 
