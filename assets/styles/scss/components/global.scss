@@ -146,6 +146,9 @@
 .buttle{
   height: 100vh;
 }
+#mobile{
+  display: none;
+}
 
 @media screen and (max-width: $tablet-width){
   body {
@@ -173,6 +176,9 @@ margin-top: 5rem;
   .font-weight{
     font-size: 15px;
    }
+   #mobile{
+    display: block;
+  }
 }
 
 @keyframes gradient {

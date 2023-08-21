@@ -200,6 +200,10 @@ a {
   height: 100vh;
 }
 
+#mobile {
+  display: none;
+}
+
 @media screen and (max-width: 810px) {
   body {
     font-size: 14px;
@@ -225,6 +229,9 @@ a {
   }
   .font-weight {
     font-size: 15px;
+  }
+  #mobile {
+    display: block;
   }
 }
 @keyframes gradient {
@@ -410,6 +417,7 @@ a {
   }
 }
 .main-box {
+  background: no-repeat center/80% url("../../img/water2.png");
   text-align: center;
   min-height: 100vh;
   transition: 0.5s;
