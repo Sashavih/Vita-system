@@ -537,9 +537,6 @@ a {
     animation: animate_grow 2.5s infinite;
     max-width: 30%;
   }
-  .main-content__elem:hover {
-    transform: scale(1);
-  }
   #active-buttle {
     max-width: 35.8%;
   }
@@ -623,6 +620,7 @@ a {
   border: 2px solid #0C73A7;
   transition: background-color 0.3s linear;
   cursor: pointer;
+  animation: animate_grow 2.5s infinite;
 }
 .brand__btn:hover {
   color: black;
@@ -783,10 +781,10 @@ a {
   }
   .content {
     font-size: 13px;
+    padding: 2rem 0 0 0;
     width: 90%;
     gap: 0.5rem 1.5rem;
     margin: 3rem 0rem 5rem 2rem;
-    padding-bottom: 15rem;
     justify-items: center;
   }
   .content__img img {
@@ -1046,8 +1044,9 @@ a {
 }
 @media screen and (max-width: 480px) {
   .modal__content {
-    width: 90%;
-    margin: 2rem auto;
+    width: 100%;
+    margin: 3rem auto;
+    border-radius: 0;
   }
 }
 .preloader {

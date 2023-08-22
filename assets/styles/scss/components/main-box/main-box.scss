@@ -109,9 +109,6 @@
     .main-content__elem{
         animation: animate_grow 2.5s infinite;
      max-width:30%;
-     &:hover{
-        transform: scale(1);
-    }
     }
     #active-buttle{
         max-width:35.8%;

@@ -55,6 +55,7 @@
     border: 2px solid #0C73A7;
     transition: background-color 0.3s linear;
     cursor: pointer;
+    animation: animate_grow 2.5s infinite;
     &:hover {
         color: black;
       background-color: #8ec1db;

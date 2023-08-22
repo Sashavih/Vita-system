@@ -4,7 +4,7 @@ let modal = $modal({
     <section>
     <h2 class="modal-title blue">о бренде</h2>
     <div class="about">
-    <p class="brand__text"><span class="blue">Vitasystem</span> — безалкогольный негазированный низкокалорийный напиток, обогащенный
+    <p class="brand__text"><span class="blue font-bold">Vitasystem</span> — безалкогольный негазированный низкокалорийный напиток, обогащенный
       витаминами, минералами, пребиотиками и пробиотиками. <br/>В линейке представлены 3 ярких
       фруктовых вкуса: «Малина-Шиповник», «Помело-Клубника», «Яблоко-Мята».</p>
       <p class="brand__text">Отличительной особенностью <span class="pink font-bold">Vitasystem Immuno</span> и <span class="orange font-bold">Vitasystem Active</span> являются уникальные
